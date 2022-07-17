@@ -11,7 +11,7 @@ func main() {
 	if len(value) == 0 {
 		value = "mobydick.txt"
 	}
-	file, err := os.Open("mobydick.txt")
+	file, err := os.Open(value)
 	if err != nil {
 		log.Fatal(err)
 	}
